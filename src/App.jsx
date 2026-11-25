@@ -102,19 +102,31 @@ const slides = [
         '01',
         'NVIDIA DLI',
         'AI · data · accelerated computing',
-        'NVIDIA Deep Learning Institute menyediakan kelas dan lokakarya praktik untuk membangun keterampilan AI, data science, dan accelerated computing.',
+        'NVIDIA Deep Learning Institute menyediakan pelatihan dan lokakarya praktik di bidang AI, data science, dan accelerated computing. Peserta mempelajari konsep lalu mencoba tekniknya melalui latihan langsung, sehingga materi dapat menjadi pengayaan CTE untuk proyek komputasi dan teknologi. Pilih kursus sesuai tingkat awal dan tujuan belajar; pelatihan ini sendiri tidak menjamin penempatan kerja.',
+        'Situs resmi NVIDIA Deep Learning Institute',
+        'https://www.nvidia.com/en-us/training/',
       ],
       [
         '02',
         'AWS ACADEMY',
         'Cloud skills · industry credentials',
-        'AWS Academy menyediakan kurikulum cloud untuk institusi pendidikan tinggi. Materi belajar dapat membantu peserta mengejar sertifikasi industri.',
+        'AWS Academy menyediakan kurikulum cloud siap ajar tanpa biaya bagi institusi pendidikan tinggi. Pendidik menggunakannya untuk membimbing mahasiswa mempelajari konsep cloud dan AI/ML melalui materi, lab, serta proyek. Program ini membantu mahasiswa mempersiapkan diri untuk sertifikasi industri dan karier cloud, tetapi sertifikasi tetap memerlukan proses belajar dan penilaian tersendiri.',
+        'Situs resmi AWS Academy',
+        'https://aws.amazon.com/training/awsacademy/',
       ],
       [
         '03',
-        'WORK-BASED',
+        'MAGANG & APPRENTICESHIP',
         'Praktik · proyek · pengalaman kerja',
-        'Magang, proyek, dan apprenticeship memberi kesempatan berlatih pada tugas kerja dengan bimbingan, sambil menghubungkan pengalaman itu dengan materi kelas.',
+        'Magang, job shadowing, dan proyek industri memberi kesempatan mengenal tugas serta standar di tempat kerja dengan arahan pembimbing. Registered Apprenticeship memiliki struktur yang lebih formal: pelatihan sambil bekerja dipadukan dengan pembelajaran teknis terkait pekerjaan. Agar pengalaman ini benar-benar mendidik, tugas, mentor, kompetensi yang dituju, dan evaluasinya perlu jelas.',
+        'U.S. Department of Labor: Registered Apprenticeship',
+        'https://www.dol.gov/resource-library/strategies-engage-employers-registered-apprenticeship-programs-takeaways-seven',
+      ],
+      [
+        '04',
+        'DAMPAK KE KERJA',
+        'Kompetensi terlihat · transisi lebih siap',
+        'Pendidikan vokasi membantu transisi ke dunia kerja ketika teori dipraktikkan pada proyek, keterampilan dinilai dengan kriteria yang jelas, dan peserta mendapat umpan balik dari pendidik atau industri. Hasilnya—seperti proyek, portofolio, pengalaman kerja, atau sertifikasi—dapat menjadi bukti kemampuan saat melamar. Bukti tersebut membantu pemberi kerja memahami keterampilan calon pekerja, tetapi tidak menjamin pekerjaan atau kecocokan posisi; peluang tetap dipengaruhi kebutuhan perusahaan, pengalaman, dan kondisi pasar kerja.',
       ],
     ],
     sources: [
@@ -555,11 +567,12 @@ const strategyItems = [
 
 function getDiagramNodes(type, items = []) {
   if (['authority', 'digital', 'assessment', 'industry'].includes(type)) {
-    return items.map(([number, title, summary, description]) => ({
+    return items.map(([number, title, summary, description, sourceLabel, sourceUrl]) => ({
       number,
       title,
       summary,
       description: description || summary,
+      source: sourceLabel && { label: sourceLabel, url: sourceUrl },
     }))
   }
 
