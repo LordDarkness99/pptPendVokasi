@@ -117,57 +117,74 @@ const slides = [
   },
   {
     section: '04 / KURIKULUM & KOMPETENSI',
-    title: 'Kompetensi tumbuh\\ndari praktik.',
+    title: 'Kurikulum adaptif\\nberbasis kerja.',
     lead:
-      'Pembelajaran menggabungkan akademik dan teknis, lalu mengujinya melalui pengalaman kerja yang relevan dengan kebutuhan wilayah.',
+      'Memadukan standar akademik, praktik teknis, dan Work-Based Learning dengan pembaruan berlapis.',
     image: photos.workshop,
     imageAlt: 'Peserta pelatihan menerapkan keterampilan teknis',
-    visualLabel: 'ALUR BELAJAR',
-    visualTitle: 'Dari konsep ke kompetensi',
-    visualNote: 'National Career Clusters Framework mengelompokkan jalur karier',
+    visualLabel: 'WEWENANG KURIKULUM | USA / CTE',
+    visualTitle: 'Kewenangan Berlapis',
+    visualNote: 'Kecepatan adopsi teknologi baru bergantung pada kebijakan tiap negara bagian',
     cards: [
-      ['Pahami konsep', 'Dasar akademik mendukung pemahaman bidang keahlian.'],
-      ['Latih keterampilan', 'Praktik menguatkan penerapan teori dan prosedur kerja.'],
-      ['Kerjakan proyek', 'Work-Based Learning mencakup magang, pendampingan, dan proyek.'],
-      ['Perbarui materi', 'Masukan industri membantu menjaga relevansi pembelajaran.'],
+      ['Pendekatan Terpadu', 'Menggabungkan akademik, kompetensi teknis, dan WBL (magang, job shadowing, proyek).'],
+      ['Acuan Klaster Karier', 'National Career Clusters Framework menyelaraskan jalur pendidikan dan kebutuhan industri.'],
+      ['Kecepatan Pembaruan', 'Bertahap per negara bagian; pembaruan kerangka nasional butuh ±1,5 tahun (15 iterasi).'],
+      ['Respons Teknologi Baru', 'Integrasi literasi AI dan teknologi terkini divalidasi berkala bersama mitra industri.'],
     ],
-    visualType: 'path',
+    visualType: 'authority',
+    visualItems: [
+      ['01', 'FEDERAL', 'Arah kebijakan & dana Perkins V'],
+      ['02', 'NEGARA BAGIAN', 'Adopsi kerangka & validasi program'],
+      ['03', 'DISTRIK / SEKOLAH', 'Penyusunan & pelaksanaan kurikulum'],
+      ['04', 'INDUSTRI', 'Validator standar & kebutuhan kerja'],
+    ],
   },
   {
     section: '05 / TEKNOLOGI & INOVASI',
-    title: 'Teknologi membuka\\nruang latihan baru.',
+    title: 'Siasati alat mahal\\ndengan simulasi.',
     lead:
-      'Alat digital memperluas cara berlatih dan mengelola pembelajaran—dengan akses, biaya, infrastruktur, dan kesiapan pendidik tetap diperhatikan.',
+      'Strategi laboratorium virtual, pendanaan eksternal, dan ekosistem digital untuk merekam kompetensi.',
     image: photos.digital,
     imageAlt: 'Visual teknologi digital untuk pembelajaran',
-    visualLabel: 'PERANGKAT PEMBELAJARAN',
-    visualTitle: 'Digital, sesuai kebutuhan',
-    visualNote: 'Penerapan perlu mengikuti kesiapan institusi',
+    visualLabel: 'EKOSISTEM DIGITAL | USA / CTE',
+    visualTitle: 'Dari Latihan ke Rekam Jejak',
+    visualNote: 'Mengatasi kendala biaya alat sekaligus mendokumentasikan capaian belajar',
     cards: [
-      ['Simulasi & AR/VR', 'Berlatih melalui lingkungan virtual sebelum situasi kerja nyata.'],
-      ['Daring & blended', 'Memadukan pembelajaran tatap muka dan daring.'],
-      ['LMS & e-portfolio', 'Mengelola kegiatan belajar sekaligus mendokumentasikan hasil.'],
-      ['AI berpotensi', 'Mendukung umpan balik dan pembelajaran adaptif; perlu kesiapan.'],
+      ['Simulasi & AR/VR', 'Pelengkap latihan awal sebelum memakai alat dan bahan praktik fisik yang mahal.'],
+      ['Hibah & Pembelajaran Daring', 'Dukungan hibah negara bagian serta video demonstrasi dan blended learning.'],
+      ['LMS & Analitik AI', 'Canvas/Moodle melacak kemajuan belajar dan memberi umpan balik adaptif.'],
+      ['E-Portfolio Terverifikasi', 'Transkrip keterampilan merekam proyek, lencana digital, dan sertifikasi siswa.'],
     ],
-    visualType: 'technology',
+    visualType: 'digital',
+    visualItems: [
+      ['01', 'SIMULASI AR/VR', 'Latihan virtual hemat risiko'],
+      ['02', 'HIBAH & DARING', 'Solusi keterbatasan fasilitas'],
+      ['03', 'LMS + AI', 'Pelacakan kompetensi adaptif'],
+      ['04', 'E-PORTFOLIO', 'Rekam jejak bukti karya'],
+    ],
   },
   {
     section: '06 / ASESMEN & SERTIFIKASI',
-    title: 'Buktikan apa yang\\nbisa dikerjakan.',
+    title: 'Diuji industri,\\ndibuktikan karya.',
     lead:
-      'Penilaian kompetensi memadukan pemahaman teori, demonstrasi praktik, proyek, dan dokumentasi hasil kerja.',
+      'Sertifikasi diterbitkan pihak ketiga independen dengan penilaian seimbang antara teori, praktik, dan portofolio.',
     image: photos.technology,
     imageAlt: 'Perangkat digital untuk menyimpan dan menampilkan bukti kerja',
-    visualLabel: 'BUKTI KOMPETENSI',
-    visualTitle: 'Lebih dari ujian tertulis',
-    visualNote: 'Industry-Recognized Credentials dapat mengakui kompetensi tertentu',
+    visualLabel: 'KOMPONEN ASESMEN | USA / CTE',
+    visualTitle: 'Industry-Recognized Credentials',
+    visualNote: 'Sekolah menyiapkan kurikulum, pihak ketiga menguji dan menerbitkan sertifikat',
     cards: [
-      ['Pengetahuan', 'Tes mengukur pemahaman teori dan konsep.'],
-      ['Kinerja', 'Tugas, simulasi, dan proyek memperlihatkan keterampilan.'],
-      ['Dokumentasi', 'E-portfolio mengumpulkan hasil pekerjaan dan bukti capaian.'],
-      ['Catatan penting', 'Sertifikat membantu pengakuan, tetapi tidak menjamin pekerjaan.'],
+      ['Penguji Pihak Ketiga', 'Asosiasi industri/profesi & lembaga independen (mis. Precision Exams) menerbitkan IRC.'],
+      ['Tes Kognitif & Kinerja', 'Ujian teori dan skill demonstration berbasis rubrik direkomendasikan berbobot setara.'],
+      ['Kulminasi E-Portfolio', 'Merangkum proyek nyata, sertifikasi industri, resume, dan refleksi karier siswa.'],
+      ['Dampak Pasar Kerja', 'IRC mendukung pengakuan kompetensi dan penghasilan, namun tidak otomatis menjamin kerja.'],
     ],
-    visualType: 'evidence',
+    visualType: 'assessment',
+    visualItems: [
+      ['01', 'TES KOGNITIF', 'Pemahaman teori (bobot setara)'],
+      ['02', 'DEMONSTRASI', 'Praktik & simulasi (bobot setara)'],
+      ['03', 'E-PORTFOLIO', 'Kulminasi proyek & IRC'],
+    ],
   },
   {
     section: '07 / PENDIDIK & PENGEMBANGAN',
@@ -318,7 +335,21 @@ function SlideCards({ cards }) {
   )
 }
 
-function VisualDiagram({ type }) {
+function VisualDiagram({ type, items = [] }) {
+  if (type === 'authority' || type === 'digital' || type === 'assessment') {
+    return (
+      <div className={`visual-diagram numbered-diagram numbered-${type}`} aria-hidden="true">
+        {items.map(([number, title, description]) => (
+          <div className="numbered-card" key={number}>
+            <b>{number}</b>
+            <strong>{title}</strong>
+            <span>{description}</span>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
   if (type === 'swot') {
     return (
       <div className="visual-diagram swot-diagram" aria-hidden="true">
@@ -383,7 +414,7 @@ function VisualPanel({ slide, isCover }) {
         <span className="visual-star" aria-hidden="true">✦</span>
         <span>{slide.visualLabel}</span>
       </div>
-      {!isCover && <VisualDiagram type={slide.visualType} />}
+      {!isCover && <VisualDiagram type={slide.visualType} items={slide.visualItems} />}
       <div className="visual-caption">
         <span className="caption-rule" />
         <h2>{slide.visualTitle}</h2>
