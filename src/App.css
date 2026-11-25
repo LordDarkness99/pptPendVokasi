@@ -385,6 +385,15 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.numbered-industry {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.numbered-industry .numbered-card {
+  min-height: 54px;
+  padding: 7px 9px;
+}
+
 .numbered-card {
   display: grid;
   min-height: 70px;
@@ -394,27 +403,98 @@
   background: rgba(15, 29, 48, 0.64);
   backdrop-filter: blur(7px);
   box-sizing: border-box;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
-.numbered-card b {
+.numbered-card:hover,
+.numbered-card:focus-visible,
+.flow-node:hover,
+.flow-node:focus-visible,
+.diagram-square:hover,
+.diagram-square:focus-visible,
+.strategy-card:hover,
+.strategy-card:focus-visible {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(32, 54, 80, 0.88);
+}
+
+.numbered-card:focus-visible,
+.flow-node:focus-visible,
+.diagram-square:focus-visible,
+.strategy-card:focus-visible,
+.mobile-diagram-toggle:focus-visible,
+.mobile-diagram-step:focus-visible,
+.detail-close:focus-visible {
+  outline: 2px solid #efb4ae;
+  outline-offset: 3px;
+}
+
+.numbered-card > span {
   margin-bottom: 4px;
   color: #ed9990;
   font-size: 9px;
   letter-spacing: 0.16em;
 }
 
-.numbered-card strong {
+.numbered-card > b {
   margin-bottom: 3px;
   color: #fff;
   font-size: 8px;
+  font-weight: 700;
   letter-spacing: 0.055em;
   line-height: 1.25;
 }
 
-.numbered-card span {
+.numbered-card > i {
   color: rgba(255, 255, 255, 0.68);
   font-size: 7.5px;
+  font-style: normal;
   line-height: 1.35;
+}
+
+.diagram-hint {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 6px;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.numbered-industry .diagram-hint {
+  margin-top: 3px;
+}
+
+.numbered-industry .numbered-card > span {
+  margin-bottom: 2px;
+}
+
+.numbered-industry .numbered-card > b {
+  margin-bottom: 2px;
+}
+
+.slide-sources {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+  margin-top: 8px;
+  color: #788291;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.slide-sources a {
+  color: #803540;
+  text-decoration-color: rgba(128, 53, 64, 0.4);
+  text-underline-offset: 2px;
+}
+
+.slide-sources a:hover {
+  color: #a52e3b;
 }
 
 .flow-diagram,
@@ -434,8 +514,8 @@
 }
 
 .flow-node,
-.swot-diagram > div,
-.strategy-diagram > div {
+.diagram-square,
+.strategy-card {
   position: relative;
   display: flex;
   min-width: 0;
@@ -446,11 +526,16 @@
   border: 1px solid rgba(255, 255, 255, 0.32);
   background: rgba(15, 29, 48, 0.64);
   backdrop-filter: blur(7px);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
 .flow-node > span,
-.swot-diagram > div > b,
-.strategy-diagram > div > b {
+.diagram-square > span,
+.strategy-card > span {
   margin-bottom: 5px;
   color: #ed9990;
   font-size: 8px;
@@ -459,8 +544,8 @@
 }
 
 .flow-node > b,
-.swot-diagram > div > span,
-.strategy-diagram > div > span {
+.diagram-square > b,
+.strategy-card > b {
   overflow: hidden;
   color: #fff;
   font-size: 9px;
@@ -469,45 +554,185 @@
   text-overflow: ellipsis;
 }
 
+.flow-node > i,
+.diagram-square > i,
+.strategy-card > i {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 7px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
 .swot-diagram {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.swot-diagram > div {
+.swot-diagram > .diagram-square {
   min-height: 67px;
 }
 
-.swot-diagram > div > b {
+.diagram-square > span {
   margin-bottom: 2px;
-  font-family: Georgia, 'Times New Roman', serif;
   font-size: 15px;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
-.swot-diagram > div > i {
-  margin-top: 4px;
-  overflow: hidden;
-  color: rgba(255, 255, 255, 0.68);
+.diagram-square > b {
   font-size: 8px;
-  font-style: normal;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .strategy-diagram {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.strategy-diagram > div {
+.strategy-diagram > .strategy-card {
   min-height: 65px;
 }
 
-.strategy-diagram > div > i {
+.strategy-card > span {
   position: absolute;
   top: 9px;
   right: 9px;
   color: rgba(255, 255, 255, 0.52);
   font-size: 8px;
-  font-style: normal;
+  margin: 0;
+}
+
+.strategy-card > b {
+  color: #ed9990;
+  font-size: 10px;
+}
+
+.strategy-card > i {
+  max-width: 90%;
+}
+
+.mobile-diagram-trigger {
+  display: none;
+}
+
+.detail-backdrop {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(7, 15, 26, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.detail-dialog {
+  position: relative;
+  width: min(100%, 440px);
+  max-height: calc(100dvh - 40px);
+  padding: 31px 32px 28px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #f5f3ed;
+  color: #17243a;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.42);
+}
+
+.detail-dialog-kicker {
+  margin: 0 36px 14px 0;
+  color: #8d2935;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.detail-dialog h2 {
+  margin: 0 35px 12px 0;
+  color: #17243a;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.detail-dialog p {
+  margin: 0;
+  color: #586679;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.detail-source {
+  display: inline-block;
+  margin-top: 15px;
+  color: #803540;
+  font-size: 11px;
+  text-decoration-color: rgba(128, 53, 64, 0.4);
+  text-underline-offset: 3px;
+}
+
+.detail-source:hover {
+  color: #a52e3b;
+}
+
+.detail-choice-list {
+  display: grid;
+  gap: 7px;
+  max-height: min(45vh, 280px);
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.detail-choice-list button {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 10px;
+  min-height: 43px;
+  padding: 8px 10px;
+  border: 1px solid rgba(23, 36, 58, 0.13);
+  color: #23334b;
+  background: rgba(255, 255, 255, 0.68);
+  cursor: pointer;
+  text-align: left;
+}
+
+.detail-choice-list button:hover,
+.detail-choice-list button:focus-visible {
+  border-color: #9c454d;
+  background: #fff;
+}
+
+.detail-choice-list button > span {
+  color: #913944;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.detail-choice-list button > b {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.detail-choice-list button > svg {
+  color: #8d2935;
+}
+
+.detail-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(23, 36, 58, 0.16);
+  color: #17243a;
+  background: transparent;
+  cursor: pointer;
+}
+
+.detail-close:hover {
+  background: #e9e5db;
 }
 
 .cover-coordinates {
@@ -950,6 +1175,33 @@
 
   .visual-diagram {
     display: none;
+  }
+
+  .visual-index {
+    display: none;
+  }
+
+  .mobile-diagram-trigger {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 26px;
+    padding: 0 7px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    color: #fff;
+    background: rgba(16, 30, 52, 0.68);
+    cursor: pointer;
+    font-size: 7px;
+    letter-spacing: 0.1em;
+  }
+
+  .mobile-diagram-trigger > span {
+    color: #f0a09b;
+    font-size: 12px;
   }
 
   .slide-layout {

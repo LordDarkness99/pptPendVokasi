@@ -16,6 +16,7 @@ import {
   Maximize2,
   Minimize2,
   RotateCcw,
+  X,
   Target,
   Users,
   Zap,
@@ -80,7 +81,49 @@ const slides = [
     visualType: 'path',
   },
   {
-    section: '02 / KEBIJAKAN & KUALIFIKASI',
+    section: '02 / CONTOH INDUSTRI & DUNIA KERJA',
+    title: 'Dari ruang kelas\\nke dunia kerja.',
+    lead:
+      'Industri dapat membantu pendidikan vokasi melatih keterampilan yang benar-benar dipakai—lalu memberi peserta didik cara untuk membuktikannya.',
+    image: photos.digital,
+    imageAlt: 'Pembelajaran teknologi digital yang relevan dengan keterampilan industri',
+    visualLabel: 'CONTOH JALUR KETERAMPILAN',
+    visualTitle: 'Latih · buktikan · terapkan',
+    visualNote: 'Contoh program industri, bukan jaminan penempatan kerja',
+    cards: [
+      ['NVIDIA · AI & komputasi', 'NVIDIA Deep Learning Institute menyediakan pelatihan praktik di AI, data science, dan accelerated computing.'],
+      ['AWS Academy · cloud', 'Kurikulum cloud untuk perguruan tinggi membantu mahasiswa membangun keterampilan dan mengejar sertifikasi industri.'],
+      ['Belajar di tempat kerja', 'Magang dan apprenticeship memberi latihan tugas nyata dengan bimbingan, berdampingan dengan pembelajaran di kelas.'],
+      ['Dampaknya ke pekerjaan', 'Proyek, praktik, dan kredensial dapat membuat kompetensi lebih terlihat dan membantu kesiapan kerja—tetapi tidak menjamin pekerjaan.'],
+    ],
+    visualType: 'industry',
+    visualItems: [
+      [
+        '01',
+        'NVIDIA DLI',
+        'AI · data · accelerated computing',
+        'NVIDIA Deep Learning Institute menyediakan kelas dan lokakarya praktik untuk membangun keterampilan AI, data science, dan accelerated computing.',
+      ],
+      [
+        '02',
+        'AWS ACADEMY',
+        'Cloud skills · industry credentials',
+        'AWS Academy menyediakan kurikulum cloud untuk institusi pendidikan tinggi. Materi belajar dapat membantu peserta mengejar sertifikasi industri.',
+      ],
+      [
+        '03',
+        'WORK-BASED',
+        'Praktik · proyek · pengalaman kerja',
+        'Magang, proyek, dan apprenticeship memberi kesempatan berlatih pada tugas kerja dengan bimbingan, sambil menghubungkan pengalaman itu dengan materi kelas.',
+      ],
+    ],
+    sources: [
+      ['NVIDIA Deep Learning Institute', 'https://www.nvidia.com/en-us/training/'],
+      ['AWS Academy', 'https://aws.amazon.com/training/awsacademy/'],
+    ],
+  },
+  {
+    section: '03 / KEBIJAKAN & KUALIFIKASI',
     title: 'Satu tujuan kerja,\\nberagam kredensial.',
     lead:
       'Kebijakan menghubungkan pendidikan dengan pengembangan tenaga kerja; kualifikasi mengikuti bidang dan ketentuan yang berlaku.',
@@ -98,7 +141,7 @@ const slides = [
     visualType: 'policy',
   },
   {
-    section: '03 / TATA KELOLA & KEMITRAAN',
+    section: '04 / TATA KELOLA & KEMITRAAN',
     title: 'Industri ikut\\nmembentuk kelas.',
     lead:
       'Kemitraan yang kuat bukan sekadar nota kesepahaman. Masukan industri perlu hadir dalam kurikulum, pengalaman kerja, dan evaluasi.',
@@ -116,7 +159,7 @@ const slides = [
     visualType: 'ecosystem',
   },
   {
-    section: '04 / KURIKULUM & KOMPETENSI',
+    section: '05 / KURIKULUM & KOMPETENSI',
     title: 'Kurikulum adaptif\\nberbasis kerja.',
     lead:
       'Memadukan standar akademik, praktik teknis, dan Work-Based Learning dengan pembaruan berlapis.',
@@ -133,14 +176,34 @@ const slides = [
     ],
     visualType: 'authority',
     visualItems: [
-      ['01', 'FEDERAL', 'Arah kebijakan & dana Perkins V'],
-      ['02', 'NEGARA BAGIAN', 'Adopsi kerangka & validasi program'],
-      ['03', 'DISTRIK / SEKOLAH', 'Penyusunan & pelaksanaan kurikulum'],
-      ['04', 'INDUSTRI', 'Validator standar & kebutuhan kerja'],
+      [
+        '01',
+        'FEDERAL',
+        'Arah kebijakan & dana Perkins V',
+        'Pemerintah federal memberi arah dan dukungan pendanaan, termasuk melalui Perkins V. Syarat program terkait dana membantu menjaga keterkaitan CTE dengan standar akademik dan kebutuhan karier.',
+      ],
+      [
+        '02',
+        'NEGARA BAGIAN',
+        'Adopsi kerangka & validasi program',
+        'Negara bagian menyetujui dan memantau program, mengadopsi kerangka seperti National Career Clusters Framework, serta menyesuaikan penerapan dengan kebutuhan regional. Kerangka karier bersama tetap diterapkan menurut keputusan masing-masing negara bagian.',
+      ],
+      [
+        '03',
+        'DISTRIK / SEKOLAH',
+        'Penyusunan & pelaksanaan kurikulum',
+        'Distrik dan sekolah menerjemahkan kerangka serta kebijakan menjadi kurikulum, mata pelajaran, praktik, dan pengalaman kerja untuk peserta didik.',
+      ],
+      [
+        '04',
+        'INDUSTRI',
+        'Validator standar & kebutuhan kerja',
+        'Mitra industri memberi masukan tentang standar kerja, teknologi, dan kredensial, lalu meninjau relevansi program secara berkala. Masukan dapat membantu pembaruan AI dan teknologi baru, tetapi akses alat serta kesiapan pendidik berbeda-beda.',
+      ],
     ],
   },
   {
-    section: '05 / TEKNOLOGI & INOVASI',
+    section: '06 / TEKNOLOGI & INOVASI',
     title: 'Siasati alat mahal\\ndengan simulasi.',
     lead:
       'Strategi laboratorium virtual, pendanaan eksternal, dan ekosistem digital untuk merekam kompetensi.',
@@ -157,14 +220,34 @@ const slides = [
     ],
     visualType: 'digital',
     visualItems: [
-      ['01', 'SIMULASI AR/VR', 'Latihan virtual hemat risiko'],
-      ['02', 'HIBAH & DARING', 'Solusi keterbatasan fasilitas'],
-      ['03', 'LMS + AI', 'Pelacakan kompetensi adaptif'],
-      ['04', 'E-PORTFOLIO', 'Rekam jejak bukti karya'],
+      [
+        '01',
+        'SIMULASI AR/VR',
+        'Latihan virtual hemat risiko',
+        'Simulasi membantu peserta mencoba prosedur dan menerima umpan balik sebelum praktik dengan alat sebenarnya. Pada pelatihan teknis, simulasi melengkapi—bukan menggantikan—latihan langsung.',
+      ],
+      [
+        '02',
+        'HIBAH & DARING',
+        'Solusi keterbatasan fasilitas',
+        'Hibah dapat membantu institusi menyediakan peralatan atau simulator. Materi daring dan simulasi virtual juga dapat memperluas kesempatan latihan saat fasilitas atau akses ke tempat kerja terbatas.',
+      ],
+      [
+        '03',
+        'LMS + AI',
+        'Pelacakan kompetensi adaptif',
+        'LMS seperti Canvas atau Moodle mengelola materi, aktivitas, dan kemajuan belajar. Analitik dapat menandai bagian yang belum dikuasai dan memberi umpan balik; penggunaan AI tetap memerlukan kesiapan pendidik, perlindungan data, dan akses yang memadai.',
+      ],
+      [
+        '04',
+        'E-PORTFOLIO',
+        'Rekam jejak bukti karya',
+        'E-portfolio atau skills-based transcript dapat menyimpan proyek, sertifikasi, dan pengalaman belajar sebelumnya sebagai rekam jejak kompetensi yang dapat ditunjukkan kepada calon pemberi kerja.',
+      ],
     ],
   },
   {
-    section: '06 / ASESMEN & SERTIFIKASI',
+    section: '07 / ASESMEN & SERTIFIKASI',
     title: 'Diuji industri,\\ndibuktikan karya.',
     lead:
       'Sertifikasi diterbitkan pihak ketiga independen dengan penilaian seimbang antara teori, praktik, dan portofolio.',
@@ -181,13 +264,28 @@ const slides = [
     ],
     visualType: 'assessment',
     visualItems: [
-      ['01', 'TES KOGNITIF', 'Pemahaman teori (bobot setara)'],
-      ['02', 'DEMONSTRASI', 'Praktik & simulasi (bobot setara)'],
-      ['03', 'E-PORTFOLIO', 'Kulminasi proyek & IRC'],
+      [
+        '01',
+        'TES KOGNITIF',
+        'Pemahaman teori (bobot setara)',
+        'Tes mengukur pemahaman konsep dan pengetahuan bidang. Hasilnya paling informatif bila dibaca bersama bukti praktik, bukan sebagai satu-satunya ukuran kompetensi.',
+      ],
+      [
+        '02',
+        'DEMONSTRASI',
+        'Praktik & simulasi (bobot setara)',
+        'Skill demonstration menilai cara peserta menerapkan keterampilan, memecahkan masalah, dan menyelesaikan tugas atau proyek dengan kriteria yang jelas.',
+      ],
+      [
+        '03',
+        'E-PORTFOLIO',
+        'Kulminasi proyek & IRC',
+        'Kredensial dapat diuji dan diterbitkan oleh lembaga independen, dewan profesi, atau asosiasi industri, sementara institusi pendidikan menyiapkan pembelajarannya. E-portfolio merangkum proyek, sertifikasi, resume, dan refleksi karier. Kredensial dapat mendukung pengakuan kompetensi, tetapi tidak menjamin pekerjaan atau kecocokan bidang kerja.',
+      ],
     ],
   },
   {
-    section: '07 / PENDIDIK & PENGEMBANGAN',
+    section: '08 / PENDIDIK & PENGEMBANGAN',
     title: 'Pendidik perlu\\nterus bertumbuh.',
     lead:
       'Pendidik vokasi memadukan keahlian teknis dengan pedagogi, lalu memperbaruinya mengikuti perubahan pekerjaan dan teknologi.',
@@ -205,7 +303,7 @@ const slides = [
     visualType: 'duo',
   },
   {
-    section: '08 / ANALISIS SWOT',
+    section: '09 / ANALISIS SWOT',
     title: 'Fleksibel, namun\\ntidak tanpa tantangan.',
     lead:
       'Keberagaman jalur dan kemitraan membuka peluang—sementara kesenjangan sumber daya dan perubahan kebutuhan kerja perlu diantisipasi.',
@@ -223,7 +321,7 @@ const slides = [
     visualType: 'swot',
   },
   {
-    section: '09 / STRATEGI DARI SWOT',
+    section: '10 / STRATEGI DARI SWOT',
     title: 'Ubah temuan jadi\\nlangkah nyata.',
     lead:
       'Empat strategi menghubungkan kekuatan, kelemahan, peluang, dan ancaman agar sistem terus relevan dengan kebutuhan kerja.',
@@ -241,7 +339,7 @@ const slides = [
     visualType: 'strategy',
   },
   {
-    section: '10 / ADAPTABILITAS INDONESIA',
+    section: '11 / ADAPTABILITAS INDONESIA',
     title: 'Ambil pelajaran,\\nbukan menyalin.',
     lead:
       'Prinsip kemitraan dan pengalaman kerja sejalan dengan arah kebijakan Indonesia—penerapannya tetap perlu mengikuti konteks nasional.',
@@ -259,7 +357,7 @@ const slides = [
     visualType: 'bridge',
   },
   {
-    section: '11 / REKOMENDASI IMPLEMENTASI',
+    section: '12 / REKOMENDASI IMPLEMENTASI',
     title: 'Mulai dari kerja\\nsama yang bermakna.',
     lead:
       'Dampak kemitraan terlihat dari bertambahnya kompetensi peserta didik—bukan semata dari jumlah dokumen kerja sama.',
@@ -278,7 +376,7 @@ const slides = [
     visualType: 'checklist',
   },
   {
-    section: '12 / KESIMPULAN',
+    section: '13 / KESIMPULAN',
     title: 'Dari belajar menjadi\\nsiap berkarya.',
     lead:
       'Vokasi yang kuat menghubungkan pembelajaran, keterampilan teknis, pengalaman kerja, teknologi, dan penilaian kompetensi.',
@@ -301,6 +399,7 @@ const sectionIcons = [BookOpen, GraduationCap, Briefcase, Layers, Cpu, Clipboard
 const shortTitles = [
   'Pembuka',
   'Model CTE',
+  'Industri',
   'Kebijakan',
   'Kemitraan',
   'Kurikulum',
@@ -313,6 +412,21 @@ const shortTitles = [
   'Implementasi',
   'Kesimpulan',
 ]
+
+function SlideSources({ sources }) {
+  if (!sources?.length) return null
+
+  return (
+    <div className="slide-sources" aria-label="Sumber informasi">
+      <span>Sumber:</span>
+      {sources.map(([label, url]) => (
+        <a href={url} key={url} target="_blank" rel="noreferrer">
+          {label}
+        </a>
+      ))}
+    </div>
+  )
+}
 
 function SlideCards({ cards }) {
   return (
@@ -335,77 +449,242 @@ function SlideCards({ cards }) {
   )
 }
 
-function VisualDiagram({ type, items = [] }) {
-  if (type === 'authority' || type === 'digital' || type === 'assessment') {
-    return (
-      <div className={`visual-diagram numbered-diagram numbered-${type}`} aria-hidden="true">
-        {items.map(([number, title, description]) => (
-          <div className="numbered-card" key={number}>
-            <b>{number}</b>
-            <strong>{title}</strong>
-            <span>{description}</span>
-          </div>
-        ))}
-      </div>
-    )
+const diagramDetails = {
+  path: [
+    'CTE memadukan pengetahuan akademik yang mengikuti standar negara bagian dengan keterampilan teknis dan persiapan karier. Program dapat tersedia di sekolah menengah maupun institusi pascasekolah menengah.',
+    'Keterampilan diperkuat lewat latihan terapan, proyek, simulasi, job shadowing, atau mentoring. Community college dan technical college juga menawarkan pelatihan teknis, sertifikat, serta associate degree.',
+    'Magang dan Registered Apprenticeship menghubungkan pembelajaran dengan pekerjaan nyata. Apprenticeship memadukan pelatihan di tempat kerja dengan pembelajaran teknis terstruktur; hasilnya tetap bergantung pada mutu program dan kebutuhan wilayah.',
+  ],
+  policy: [
+    'Perkins V mendukung program CTE di jenjang menengah dan pascasekolah menengah. Pendanaan federal mendorong kualitas, akses, dan keselarasan program dengan kebutuhan peserta didik serta pasar kerja.',
+    'WIOA menghubungkan pengembangan keterampilan dengan layanan tenaga kerja. Pelatihan dapat diarahkan pada kebutuhan pekerjaan dan layanan ketenagakerjaan di wilayah.',
+    'Kualifikasi dapat berupa sertifikat teknis, associate degree, sertifikasi profesional, atau lisensi. AS tidak memiliki satu kerangka kualifikasi nasional universal seperti KKNI, sehingga pengakuan perlu dilihat menurut bidang dan penerbitnya.',
+  ],
+  ecosystem: [
+    'Komite penasihat industri dapat memberi masukan tentang kompetensi, teknologi, peralatan, standar kerja, dan kredensial. Masukan perlu ditinjau berkala agar pembelajaran tidak tertinggal.',
+    'Sekolah, community college, technical college, dan penyedia pelatihan menerjemahkan kebutuhan tersebut menjadi kurikulum, program berbasis kerja, dan jalur kualifikasi. Institusi tetap bertanggung jawab atas mutu pengajaran.',
+    'Pemerintah dan organisasi tenaga kerja membantu kebijakan, koordinasi, serta dukungan program. Bentuk keterlibatan dan tanggung jawab berbeda menurut program; kemitraan perlu memiliki kegiatan serta evaluasi nyata.',
+  ],
+  duo: [
+    'Persyaratan pendidik CTE tidak seragam secara nasional. Negara bagian atau institusi dapat menggabungkan pendidikan formal, pengalaman kerja tervalidasi, lisensi atau sertifikasi bidang, asesmen, dan pelatihan keguruan; jalur alternatif berbasis industri juga tersedia di sejumlah wilayah.',
+    'Pengalaman industri menjaga materi dekat dengan praktik kerja, tetapi tidak otomatis menggantikan kemampuan mengajar. Mentoring, induksi setelah mulai mengajar, pelatihan pedagogi, dan externship membantu pendidik mengembangkan kedua sisi kompetensi. Kebutuhan pengembangan profesional dan kekurangan guru CTE tetap menjadi tantangan.',
+  ],
+  bridge: [
+    'Magang memberi pengalaman menerapkan keterampilan di lingkungan kerja. Perpres Nomor 68 Tahun 2022 dan link and match 8+i mendorong kolaborasi pendidikan vokasi dengan industri, termasuk pengalaman kerja dan praktisi mengajar.',
+    'Kurikulum bersama membantu sekolah dan industri menyelaraskan kompetensi, teknologi, dan prosedur kerja yang dipelajari. Penerapan di Indonesia tetap menyesuaikan kebijakan nasional serta kebutuhan daerah.',
+    'Proyek nyata melatih peserta memecahkan masalah, bekerja dengan standar yang jelas, dan menunjukkan hasil. Proyek dapat dirancang bersama pemberi kerja atau komunitas.',
+    'Sertifikasi industri dapat menjadi bukti tambahan kompetensi. Pengakuan dan kesetaraannya perlu dipetakan ke sistem nasional seperti KKNI; sertifikat sendiri tidak menjamin pekerjaan.',
+  ],
+  checklist: [
+    'Pilih mitra berdasarkan potensi ekonomi dan kebutuhan sektor kerja setempat. Forum atau kemitraan regional dapat membantu sekolah, perguruan tinggi, pemerintah, dan perusahaan berbagi informasi serta fasilitas.',
+    'Tinjau kurikulum secara berkala bersama industri. Proyek perlu menggunakan masalah kerja yang relevan, sasaran kompetensi, pembimbing, dan rubrik penilaian yang dipahami peserta.',
+    'Nilai kerja sama dari peningkatan kompetensi dan kualitas hasil belajar—bukan hanya jumlah perjanjian. Catat tindak lanjut, kesenjangan fasilitas, pengalaman peserta, dan kebutuhan pelatihan pendidik.',
+  ],
+  closing: [
+    'Ekosistem TVET AS menggabungkan CTE, community college, technical college, dan apprenticeship. Keberagaman membuka pilihan jalur, tetapi membutuhkan koordinasi agar mutu dan pengakuan kompetensi tidak terlalu timpang.',
+    'Pembelajaran teori, praktik, simulasi, dan proyek membantu peserta mengubah pengetahuan menjadi kompetensi. Kemitraan industri dan pengalaman kerja menjaga latihan tetap relevan.',
+    'Portofolio, sertifikasi, dan pengalaman kerja membuat kemampuan lebih mudah ditunjukkan kepada pemberi kerja. Adaptasi untuk Indonesia perlu sesuai kebutuhan daerah, kapasitas institusi, dan KKNI.',
+  ],
+}
+
+const diagramLabels = {
+  path: ['TEORI', 'PRAKTIK', 'DUNIA KERJA'],
+  policy: ['PERKINS V', 'WIOA 2014', 'KREDENSIAL'],
+  ecosystem: ['INDUSTRI', 'PENDIDIKAN', 'PEMERINTAH'],
+  duo: ['KOMPETENSI TEKNIS', 'PEDAGOGI'],
+  bridge: ['MAGANG', 'KURIKULUM', 'PROYEK', 'SERTIFIKASI'],
+  checklist: ['POTENSI DAERAH', 'PROYEK NYATA', 'EVALUASI DAMPAK'],
+  closing: ['BELAJAR', 'MENERAPKAN', 'BERKARYA'],
+}
+
+const swotItems = [
+  [
+    'S',
+    'Kekuatan',
+    'Jalur beragam · industri terlibat',
+    'CTE, community college, technical college, dan Registered Apprenticeship memberi beragam jalur. Integrasi akademik, keterampilan teknis, dan pengalaman kerja membantu peserta memilih kompetensi sesuai tujuan karier. Fleksibilitas program juga memungkinkan penyesuaian dengan ekonomi regional.',
+  ],
+  [
+    'W',
+    'Kelemahan',
+    'Sumber daya tidak merata',
+    'Desentralisasi menyebabkan kapasitas, fasilitas, dan sumber daya berbeda antardaerah dan lembaga. Beragamnya standar serta kredensial dapat menyulitkan penyelarasan dan pengakuan kompetensi. Pembelajaran berbasis kerja juga bergantung pada kapasitas pemberi kerja dan mitra.',
+  ],
+  [
+    'O',
+    'Peluang',
+    'AI · otomasi · digital',
+    'AI, otomasi, dan teknologi digital membuka peluang reskilling dan upskilling. Kemitraan dapat mengembangkan program baru, memperbarui kompetensi, serta memperluas apprenticeship agar perusahaan membangun jalur tenaga kerja terampil.',
+  ],
+  [
+    'T',
+    'Ancaman',
+    'Kesenjangan tenaga terampil',
+    'Kekurangan tenaga terampil, perubahan kebutuhan kompetensi, dan ketimpangan akses menekan relevansi sistem. Di manufaktur, konstruksi, dan pekerjaan terampil, masa pensiun dapat menambah kebutuhan pengganti. Perusahaan kecil juga dapat terkendala kapasitas apprenticeship, jangkauan, serta pemahaman masyarakat tentang jalur ini.',
+    'U.S. Department of Labor: employer strategies for Registered Apprenticeship',
+    'https://www.dol.gov/resource-library/strategies-engage-employers-registered-apprenticeship-programs-takeaways-seven',
+  ],
+]
+
+const strategyItems = [
+  [
+    '01',
+    'SO',
+    'Perluas program berbasis peluang',
+    'Manfaatkan keberagaman jalur dan kemitraan industri untuk mengembangkan pelatihan AI, otomasi, dan teknologi digital sesuai kebutuhan pasar kerja. Perluasan Registered Apprenticeship juga dapat membantu perusahaan membangun jalur rekrutmen tenaga kerja terampil.',
+  ],
+  [
+    '02',
+    'WO',
+    'Tutup kesenjangan kapasitas',
+    'Gunakan teknologi, pendanaan yang tersedia, dan kerja sama lintas sektor untuk memperbaiki fasilitas, memperluas akses, serta meningkatkan kapasitas penyelenggara. Pemetaan kompetensi dan penyelarasan sertifikasi membantu industri mengenali hasil belajar.',
+  ],
+  [
+    '03',
+    'ST',
+    'Perbarui keterampilan kerja',
+    'Gunakan fleksibilitas kurikulum, masukan industri, dan pemagangan untuk memperbarui kompetensi saat teknologi berubah. Kemitraan juga dapat mendukung transfer pengetahuan dari pekerja berpengalaman kepada generasi tenaga kerja berikutnya.',
+  ],
+  [
+    '04',
+    'WT',
+    'Perkuat pemerataan dan koordinasi',
+    'Perkuat evaluasi kurikulum, pemerataan sumber daya, dan koordinasi antarlembaga. Kemitraan regional, penggunaan fasilitas praktik bersama, serta sosialisasi jalur vokasi dapat memperluas partisipasi dan mengurangi kesenjangan keterampilan.',
+  ],
+]
+
+function getDiagramNodes(type, items = []) {
+  if (['authority', 'digital', 'assessment', 'industry'].includes(type)) {
+    return items.map(([number, title, summary, description]) => ({
+      number,
+      title,
+      summary,
+      description: description || summary,
+    }))
   }
 
   if (type === 'swot') {
-    return (
-      <div className="visual-diagram swot-diagram" aria-hidden="true">
-        <div><b>S</b><span>Strengths</span><i>Industry links</i></div>
-        <div><b>W</b><span>Weaknesses</span><i>Uneven resources</i></div>
-        <div><b>O</b><span>Opportunities</span><i>AI & digital</i></div>
-        <div><b>T</b><span>Threats</span><i>Shifting skills</i></div>
-      </div>
-    )
+    return swotItems.map(([number, title, summary, description, sourceLabel, sourceUrl]) => ({
+      number,
+      title,
+      summary,
+      description,
+      source: sourceLabel && { label: sourceLabel, url: sourceUrl },
+    }))
   }
 
   if (type === 'strategy') {
-    return (
-      <div className="visual-diagram strategy-diagram" aria-hidden="true">
-        <div><b>SO</b><span>Build on strengths</span><i>01</i></div>
-        <div><b>WO</b><span>Widen access</span><i>02</i></div>
-        <div><b>ST</b><span>Keep skills relevant</span><i>03</i></div>
-        <div><b>WT</b><span>Strengthen foundations</span><i>04</i></div>
-      </div>
-    )
+    return strategyItems.map(([number, title, summary, description]) => ({
+      number,
+      title,
+      dialogTitle: `Strategi ${title}`,
+      summary,
+      description,
+    }))
   }
 
-  const diagramContent = {
-    path: ['TEORI', 'PRAKTIK', 'DUNIA KERJA'],
-    policy: ['PERKINS V', 'WIOA 2014', 'KREDENSIAL'],
-    ecosystem: ['INDUSTRI', 'PENDIDIKAN', 'PEMERINTAH'],
-    technology: ['SIMULASI', 'LMS', 'E-PORTFOLIO', 'AI'],
-    evidence: ['PENGETAHUAN', 'DEMONSTRASI', 'PORTOFOLIO'],
-    duo: ['KOMPETENSI TEKNIS', 'PEDAGOGI'],
-    bridge: ['MAGANG', 'KURIKULUM', 'PROYEK', 'SERTIFIKASI'],
-    checklist: ['POTENSI DAERAH', 'PROYEK NYATA', 'EVALUASI DAMPAK'],
-    closing: ['BELAJAR', 'MENERAPKAN', 'BERKARYA'],
-  }[type]
+  return (diagramLabels[type] || []).map((title, index) => ({
+    number: String(index + 1).padStart(2, '0'),
+    title,
+    description:
+      diagramDetails[type]?.[index] ||
+      `${title} merupakan bagian dari alur pembelajaran dan pengembangan kompetensi.`,
+  }))
+}
 
-  if (!diagramContent) return null
+function DiagramButton({
+  number,
+  title,
+  summary,
+  description,
+  source,
+  dialogTitle,
+  onSelect,
+  className = '',
+}) {
+  return (
+    <button
+      className={className}
+      type="button"
+      aria-haspopup="dialog"
+      aria-label={`Buka penjelasan: ${title}`}
+      onClick={() =>
+        onSelect({
+          number,
+          title: dialogTitle || title,
+          description: description || summary,
+          source,
+        })
+      }
+    >
+      {number && <span>{number}</span>}
+      <b>{title}</b>
+      {summary && <i>{summary}</i>}
+      <small className="diagram-hint">ⓘ Penjelasan</small>
+    </button>
+  )
+}
+
+function VisualDiagram({ type, items = [], onSelect }) {
+  const nodes = getDiagramNodes(type, items)
+  if (!nodes.length) return null
+  const numberedTypes = ['authority', 'digital', 'assessment', 'industry']
+  const className = numberedTypes.includes(type)
+    ? `numbered-diagram numbered-${type}`
+    : type === 'swot' || type === 'strategy'
+      ? `${type}-diagram`
+      : `flow-diagram flow-${type}`
 
   return (
-    <div className={`visual-diagram flow-diagram flow-${type}`} aria-hidden="true">
-      {diagramContent.map((label, index) => (
-        <div className="flow-node" key={label}>
-          <span>{String(index + 1).padStart(2, '0')}</span>
-          <b>{label}</b>
-          {index < diagramContent.length - 1 && <i />}
-        </div>
+    <div className={`visual-diagram ${className}`}>
+      {nodes.map((node) => (
+        <DiagramButton
+          className={numberedTypes.includes(type) ? 'numbered-card' : type === 'swot' ? 'diagram-square' : type === 'strategy' ? 'strategy-card' : 'flow-node'}
+          description={node.description}
+          key={node.number}
+          number={node.number}
+          onSelect={onSelect}
+          source={node.source}
+          dialogTitle={node.dialogTitle}
+          summary={node.summary}
+          title={node.title}
+        />
       ))}
     </div>
   )
 }
 
-function VisualPanel({ slide, isCover }) {
+function MobileDiagramAccess({ type, items, onSelect }) {
+  const nodes = getDiagramNodes(type, items)
+
+  if (!nodes.length) return null
+
+  return (
+    <button
+      className="mobile-diagram-trigger"
+      type="button"
+      aria-haspopup="dialog"
+      aria-label="Buka penjelasan diagram"
+      onClick={() =>
+        onSelect({
+          title: 'Pilih bagian diagram',
+          description: 'Pilih tahapan yang ingin dipelajari.',
+          nodes,
+        })
+      }
+    >
+      LIHAT ALUR <span aria-hidden="true">+</span>
+    </button>
+  )
+}
+
+function VisualPanel({ slide, isCover, onSelectDetail }) {
   return (
     <motion.div
       layoutId="morph-visual"
       className={`visual-panel ${isCover ? 'visual-panel-cover' : ''}`}
       style={{ backgroundImage: `url("${slide.image}")` }}
-      role="img"
+      role="group"
       aria-label={slide.imageAlt}
       transition={{ type: 'spring', stiffness: 90, damping: 22 }}
     >
@@ -414,7 +693,20 @@ function VisualPanel({ slide, isCover }) {
         <span className="visual-star" aria-hidden="true">✦</span>
         <span>{slide.visualLabel}</span>
       </div>
-      {!isCover && <VisualDiagram type={slide.visualType} items={slide.visualItems} />}
+      {!isCover && (
+        <VisualDiagram
+          type={slide.visualType}
+          items={slide.visualItems}
+          onSelect={onSelectDetail}
+        />
+      )}
+      {!isCover && (
+        <MobileDiagramAccess
+          type={slide.visualType}
+          items={slide.visualItems}
+          onSelect={onSelectDetail}
+        />
+      )}
       <div className="visual-caption">
         <span className="caption-rule" />
         <h2>{slide.visualTitle}</h2>
@@ -432,7 +724,7 @@ function VisualPanel({ slide, isCover }) {
   )
 }
 
-function SlideContent({ slide, index, prefersReducedMotion }) {
+function SlideContent({ slide, index, prefersReducedMotion, onSelectDetail }) {
   const isCover = slide.kind === 'cover'
   return (
     <motion.article
@@ -468,10 +760,17 @@ function SlideContent({ slide, index, prefersReducedMotion }) {
             </div>
           </>
         ) : (
-          <SlideCards cards={slide.cards} />
+          <>
+            <SlideCards cards={slide.cards} />
+            <SlideSources sources={slide.sources} />
+          </>
         )}
       </div>
-      <VisualPanel slide={slide} isCover={isCover} />
+      <VisualPanel
+        slide={slide}
+        isCover={isCover}
+        onSelectDetail={onSelectDetail}
+      />
     </motion.article>
   )
 }
@@ -481,7 +780,10 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [fullscreenError, setFullscreenError] = useState('')
+  const [activeDetail, setActiveDetail] = useState(null)
   const shellRef = useRef(null)
+  const detailCloseRef = useRef(null)
+  const detailTriggerRef = useRef(null)
   const touchStart = useRef(null)
   const prefersReducedMotion = useReducedMotion()
   const slide = slides[activeSlide]
@@ -491,9 +793,23 @@ function App() {
     setActiveSlide(Math.max(0, Math.min(slides.length - 1, nextIndex)))
   }
 
+  const openDetail = (detail) => {
+    detailTriggerRef.current = document.activeElement
+    setIsPlaying(false)
+    setActiveDetail(detail)
+  }
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.altKey || event.ctrlKey || event.metaKey) return
+      if (activeDetail) {
+        if (event.key === 'Escape') {
+          event.preventDefault()
+          setActiveDetail(null)
+        }
+        return
+      }
+
       if (event.key === 'ArrowRight' || event.key === 'PageDown') {
         event.preventDefault()
         setActiveSlide((current) => Math.min(slides.length - 1, current + 1))
@@ -512,7 +828,15 @@ function App() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [])
+  }, [activeDetail])
+
+  useEffect(() => {
+    if (!activeDetail) return undefined
+
+    const trigger = detailTriggerRef.current
+    detailCloseRef.current?.focus()
+    return () => trigger?.focus()
+  }, [activeDetail])
 
   useEffect(() => {
     if (!isPlaying) return undefined
@@ -600,6 +924,7 @@ function App() {
               slide={slide}
               index={activeSlide}
               prefersReducedMotion={prefersReducedMotion}
+              onSelectDetail={openDetail}
             />
           </AnimatePresence>
         </LayoutGroup>
@@ -697,6 +1022,76 @@ function App() {
         <span><span className="footer-star">✦</span> A FIELD GUIDE TO VOCATIONAL EDUCATION</span>
         <span>DESIGNED TO MOVE IDEAS FORWARD <ArrowRight size={12} /></span>
       </footer>
+
+      <AnimatePresence>
+        {activeDetail && (
+          <motion.div
+            className="detail-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: prefersReducedMotion ? 0.01 : 0.18 }}
+            onClick={() => setActiveDetail(null)}
+          >
+            <motion.section
+              className="detail-dialog"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="detail-dialog-title"
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 12, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 8, scale: 0.98 }}
+              transition={{ duration: prefersReducedMotion ? 0.01 : 0.2 }}
+              onClick={(event) => event.stopPropagation()}
+            >
+              <button
+                className="detail-close"
+                type="button"
+                aria-label="Tutup penjelasan"
+                ref={detailCloseRef}
+                onClick={() => setActiveDetail(null)}
+              >
+                <X size={17} />
+              </button>
+              <p className="detail-dialog-kicker">
+                PENJELASAN{activeDetail.number ? ` · ${activeDetail.number}` : ''}
+              </p>
+              <h2 id="detail-dialog-title">{activeDetail.title}</h2>
+              <p>{activeDetail.description}</p>
+              {activeDetail.source && (
+                <a
+                  className="detail-source"
+                  href={activeDetail.source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Sumber: {activeDetail.source.label}
+                </a>
+              )}
+              {activeDetail.nodes && (
+                <div className="detail-choice-list">
+                  {activeDetail.nodes.map((node) => (
+                    <button
+                      type="button"
+                      key={node.number}
+                      onClick={() =>
+                        setActiveDetail({
+                          ...node,
+                          title: node.dialogTitle || node.title,
+                        })
+                      }
+                    >
+                      <span>{node.number}</span>
+                      <b>{node.title}</b>
+                      <ArrowRight size={15} aria-hidden="true" />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </motion.section>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   )
 }
