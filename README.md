@@ -1,4 +1,4 @@
-# Fieldnotes — Pendidikan Vokasi AS
+# Fieldnotes Pendidikan Vokasi AS
 
 Presentasi web interaktif berbahasa Indonesia tentang Career and Technical
 Education (CTE) di Amerika Serikat dan pelajaran yang dapat diadaptasi untuk

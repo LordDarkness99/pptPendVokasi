@@ -54,7 +54,7 @@ const slides = [
     section: 'PENDIDIKAN VOKASI',
     title: 'Skills that\\nmove a nation.',
     lead:
-      'Membaca sistem Career and Technical Education Amerika Serikat—dan menemukan pelajaran yang relevan untuk Indonesia.',
+      'Membaca sistem Career and Technical Education Amerika Serikatdan menemukan pelajaran yang relevan untuk Indonesia.',
     image: photos.america,
     imageAlt: 'Kawasan perkotaan sebagai pengantar topik pendidikan vokasi Amerika Serikat',
     visualLabel: 'A FIELD GUIDE TO',
@@ -84,7 +84,7 @@ const slides = [
     section: '02 / CONTOH INDUSTRI & DUNIA KERJA',
     title: 'Dari ruang kelas\\nke dunia kerja.',
     lead:
-      'Industri dapat membantu pendidikan vokasi melatih keterampilan yang benar-benar dipakai—lalu memberi peserta didik cara untuk membuktikannya.',
+      'Industri dapat membantu pendidikan vokasi melatih keterampilan yang benar-benar dipakailalu memberi peserta didik cara untuk membuktikannya.',
     image: photos.digital,
     imageAlt: 'Pembelajaran teknologi digital yang relevan dengan keterampilan industri',
     visualLabel: 'CONTOH JALUR KETERAMPILAN',
@@ -94,7 +94,7 @@ const slides = [
       ['NVIDIA · AI & komputasi', 'NVIDIA Deep Learning Institute menyediakan pelatihan praktik di AI, data science, dan accelerated computing.'],
       ['AWS Academy · cloud', 'Kurikulum cloud untuk perguruan tinggi membantu mahasiswa membangun keterampilan dan mengejar sertifikasi industri.'],
       ['Belajar di tempat kerja', 'Magang dan apprenticeship memberi latihan tugas nyata dengan bimbingan, berdampingan dengan pembelajaran di kelas.'],
-      ['Dampaknya ke pekerjaan', 'Proyek, praktik, dan kredensial dapat membuat kompetensi lebih terlihat dan membantu kesiapan kerja—tetapi tidak menjamin pekerjaan.'],
+      ['Dampaknya ke pekerjaan', 'Proyek, praktik, dan kredensial dapat membuat kompetensi lebih terlihat dan membantu kesiapan kerja tetapi tidak menjamin pekerjaan.'],
     ],
     visualType: 'industry',
     visualItems: [
@@ -126,7 +126,7 @@ const slides = [
         '04',
         'DAMPAK KE KERJA',
         'Kompetensi terlihat · transisi lebih siap',
-        'Pendidikan vokasi membantu transisi ke dunia kerja ketika teori dipraktikkan pada proyek, keterampilan dinilai dengan kriteria yang jelas, dan peserta mendapat umpan balik dari pendidik atau industri. Hasilnya—seperti proyek, portofolio, pengalaman kerja, atau sertifikasi—dapat menjadi bukti kemampuan saat melamar. Bukti tersebut membantu pemberi kerja memahami keterampilan calon pekerja, tetapi tidak menjamin pekerjaan atau kecocokan posisi; peluang tetap dipengaruhi kebutuhan perusahaan, pengalaman, dan kondisi pasar kerja.',
+        'Pendidikan vokasi membantu transisi ke dunia kerja ketika teori dipraktikkan pada proyek, keterampilan dinilai dengan kriteria yang jelas, dan peserta mendapat umpan balik dari pendidik atau industri. Hasilnya seperti proyek, portofolio, pengalaman kerja, atau sertifikasi dapat menjadi bukti kemampuan saat melamar. Bukti tersebut membantu pemberi kerja memahami keterampilan calon pekerja, tetapi tidak menjamin pekerjaan atau kecocokan posisi; peluang tetap dipengaruhi kebutuhan perusahaan, pengalaman, dan kondisi pasar kerja.',
       ],
     ],
     sources: [
@@ -236,7 +236,7 @@ const slides = [
         '01',
         'SIMULASI AR/VR',
         'Latihan virtual hemat risiko',
-        'Simulasi membantu peserta mencoba prosedur dan menerima umpan balik sebelum praktik dengan alat sebenarnya. Pada pelatihan teknis, simulasi melengkapi—bukan menggantikan—latihan langsung.',
+        'Simulasi membantu peserta mencoba prosedur dan menerima umpan balik sebelum praktik dengan alat sebenarnya. Pada pelatihan teknis, simulasi melengkapi bukan menggantikan latihan langsung.',
       ],
       [
         '02',
@@ -318,7 +318,7 @@ const slides = [
     section: '09 / ANALISIS SWOT',
     title: 'Fleksibel, namun\\ntidak tanpa tantangan.',
     lead:
-      'Keberagaman jalur dan kemitraan membuka peluang—sementara kesenjangan sumber daya dan perubahan kebutuhan kerja perlu diantisipasi.',
+      'Keberagaman jalur dan kemitraan membuka peluang sementara kesenjangan sumber daya dan perubahan kebutuhan kerja perlu diantisipasi.',
     image: photos.workshop,
     imageAlt: 'Kegiatan praktik dalam lingkungan kerja',
     visualLabel: 'PETA SWOT',
@@ -354,7 +354,7 @@ const slides = [
     section: '11 / ADAPTABILITAS INDONESIA',
     title: 'Ambil pelajaran,\\nbukan menyalin.',
     lead:
-      'Prinsip kemitraan dan pengalaman kerja sejalan dengan arah kebijakan Indonesia—penerapannya tetap perlu mengikuti konteks nasional.',
+      'Prinsip kemitraan dan pengalaman kerja sejalan dengan arah kebijakan Indonesia penerapannya tetap perlu mengikuti konteks nasional.',
     image: photos.classroom,
     imageAlt: 'Suasana belajar untuk mengawali pembahasan penerapan di Indonesia',
     visualLabel: 'JEMBATAN AS → INDONESIA',
@@ -372,7 +372,7 @@ const slides = [
     section: '12 / REKOMENDASI IMPLEMENTASI',
     title: 'Mulai dari kerja\\nsama yang bermakna.',
     lead:
-      'Dampak kemitraan terlihat dari bertambahnya kompetensi peserta didik—bukan semata dari jumlah dokumen kerja sama.',
+      'Dampak kemitraan terlihat dari bertambahnya kompetensi peserta didik bukan semata dari jumlah dokumen kerja sama.',
     image: photos.workshop,
     imageAlt: 'Kegiatan praktik yang mencerminkan pembelajaran berbasis proyek',
     visualLabel: 'LANGKAH IMPLEMENTASI',
@@ -490,7 +490,7 @@ const diagramDetails = {
   checklist: [
     'Pilih mitra berdasarkan potensi ekonomi dan kebutuhan sektor kerja setempat. Forum atau kemitraan regional dapat membantu sekolah, perguruan tinggi, pemerintah, dan perusahaan berbagi informasi serta fasilitas.',
     'Tinjau kurikulum secara berkala bersama industri. Proyek perlu menggunakan masalah kerja yang relevan, sasaran kompetensi, pembimbing, dan rubrik penilaian yang dipahami peserta.',
-    'Nilai kerja sama dari peningkatan kompetensi dan kualitas hasil belajar—bukan hanya jumlah perjanjian. Catat tindak lanjut, kesenjangan fasilitas, pengalaman peserta, dan kebutuhan pelatihan pendidik.',
+    'Nilai kerja sama dari peningkatan kompetensi dan kualitas hasil belajar bukan hanya jumlah perjanjian. Catat tindak lanjut, kesenjangan fasilitas, pengalaman peserta, dan kebutuhan pelatihan pendidik.',
   ],
   closing: [
     'Ekosistem TVET AS menggabungkan CTE, community college, technical college, dan apprenticeship. Keberagaman membuka pilihan jalur, tetapi membutuhkan koordinasi agar mutu dan pengakuan kompetensi tidak terlalu timpang.',
